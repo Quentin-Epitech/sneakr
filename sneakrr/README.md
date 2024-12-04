@@ -11,8 +11,7 @@
   - `prix`  
   - `description`  
   - `image`
-  - Ou prendre API d'un sneakers 🚀
-
+  - Ou prendre API d'un sneakers: https://github.com/druv5319/Sneaks-API 🚀
 - **Améliorer le design du site**  
   - Palette de couleurs attractive 🎨  
   - Dynamisme et animations 💡  
