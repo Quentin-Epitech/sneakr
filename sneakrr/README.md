@@ -17,6 +17,9 @@
   - Dynamisme et animations 💡  
   - Fonctionnalité "Add to Cart" 🛒  
   - Ajouter un logo dans l'onglet du navigateur 🖼️  
+  - Shearch bar
+  - site style we the new 
+  
 
 - **Connexion à la base de données**  
   - Configuration via fichier `.env`  

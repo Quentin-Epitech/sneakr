@@ -6,7 +6,8 @@ const App = () => {
     { id: 1, name: "Air Max 97", price: "150€", image: "https://via.placeholder.com/150" },
     { id: 2, name: "Yeezy Boost 350", price: "220€", image: "https://via.placeholder.com/150" },
     { id: 3, name: "Jordan 1 Retro", price: "180€", image: "https://via.placeholder.com/150" },
-  ];
+  ]; // A changer,mettre dans une db 
+
 
   return (
     <div className="app">
@@ -14,9 +15,10 @@ const App = () => {
         <h1>Sneakr</h1>
         <div className="logo">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-            <path d="M 24.046875 2.0136719 C ..." />
+            <path d="M 24.046875 2.0136719 C ..." /> 
           </svg>
         </div>
+      
       </header>
       <main className="main">
         <h2>Nos Sneakers</h2>
