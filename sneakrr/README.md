@@ -11,6 +11,7 @@
   - `prix`  
   - `description`  
   - `image`
+  - Ou prendre API d'un sneakers 🚀
 
 - **Améliorer le design du site**  
   - Palette de couleurs attractive 🎨  
@@ -19,7 +20,7 @@
   - Ajouter un logo dans l'onglet du navigateur 🖼️  
   - Shearch bar
   - site style we the new 
-  
+
 
 - **Connexion à la base de données**  
   - Configuration via fichier `.env`  
