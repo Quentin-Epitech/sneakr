@@ -1,39 +1,21 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
 
-const App = () => {
-  const sneakers = [
-    { id: 1, name: "Air Max 97", price: "150€", image: "https://via.placeholder.com/150" },
-    { id: 2, name: "Yeezy Boost 350", price: "220€", image: "https://via.placeholder.com/150" },
-    { id: 3, name: "Jordan 1 Retro", price: "180€", image: "https://via.placeholder.com/150" },
-  ]; // A changer,mettre dans une db 
-
-
+function App() {
   return (
-    <div className="app">
-      <header className="header">
-        <h1>Sneakr</h1>
-        <div className="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
-            <path d="M 24.046875 2.0136719 C ..." /> 
-          </svg>
-        </div>
-      
-      </header>
-      <main className="main">
-        <h2>Nos Sneakers</h2>e
-        <div className="sneaker-grid">
-          {sneakers.map((sneaker) => (
-            <div key={sneaker.id} className="sneaker-card">
-              <img src={sneaker.image} alt={sneaker.name} />
-              <h3>{sneaker.name}</h3>
-              <p>{sneaker.price}</p>
-            </div>
-          ))}
-        </div>
-      </main>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+      <div className="bg-white shadow-md rounded-lg p-6 max-w-md w-full">
+        <h1 className="text-2xl font-bold text-center text-blue-600 mb-4">
+          Ma Première App React
+        </h1>
+        <p className="text-gray-700 text-center">
+          Bienvenue dans mon application utilisant Tailwind CSS !
+        </p>
+        <button className="w-full mt-4 bg-green-500 text-white py-2 rounded hover:bg-green-600 transition duration-300">
+          Commencer
+        </button>
+      </div>
     </div>
   );
-};
+}
 
 export default App;
