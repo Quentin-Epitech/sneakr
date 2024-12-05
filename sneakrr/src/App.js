@@ -21,7 +21,7 @@ const App = () => {
       
       </header>
       <main className="main">
-        <h2>Nos Sneakers</h2>
+        <h2>Nos Sneakers</h2>e
         <div className="sneaker-grid">
           {sneakers.map((sneaker) => (
             <div key={sneaker.id} className="sneaker-card">
