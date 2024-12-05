@@ -2,7 +2,7 @@
 # 🚀 TODO LIST 
 ## Mise en place:
   - Création DB en phpMyadmin,deux colonne,celle du login et celle des produits
-  - Page front avec page admin et page produits
+  - Page front avec page admin et page produits : TAILWIND
   - Création des routes
 
 ## 📌 À faire :
