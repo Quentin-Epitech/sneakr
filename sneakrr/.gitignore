@@ -1,13 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/backend
-backend
+# Ignore the backend folder
+/backend/
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-/backend
-.backend
 # testing
 /coverage
 
