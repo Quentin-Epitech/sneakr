@@ -3,7 +3,6 @@ const mysql = require('mysql')
 const cors = require('cors') 
 const app = express()
 const expressPort = 3001
-
 app.use(cors())
 app.use(express.json())
 
@@ -49,6 +48,12 @@ app.get('/get',(req,res)=> {
     });
  });
 
+
+
+
+
+
 app.listen(expressPort, () => {
-    console.log('Serveur en cours exécution sur le port:', expressPort)
-})
+    console.log(`Serveur lancé sur le port ${expressPort}`);
+});
+

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import logo from './assets/Designer.png';
 
-const App = () => {
+const Home = () => {
   const [sneakers, setSneakers] = useState([]);
   const [filteredSneakers, setFilteredSneakers] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -18,6 +18,7 @@ const App = () => {
       });
   }, []);
 
+
   const handleSearch = (event) => {
     const value = event.target.value.toLowerCase();
     setSearchTerm(value);
@@ -28,6 +29,7 @@ const App = () => {
     
     setFilteredSneakers(filtered);
   };
+  
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'rgba(241, 241, 231, 1)' }}>
@@ -77,4 +79,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
