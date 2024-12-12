@@ -2,8 +2,9 @@
 # 🚀 ROADMAP
 ## Page admin: Formulaire
  - gestion de Token
- - route avec connexion 
+ - Logout
  - changer axios avec FETCH 
+
 
 
 ## 🌟 Bonus :
