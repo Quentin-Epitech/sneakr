@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext'; 
 import logo from './assets/Designer.png';
@@ -13,27 +12,34 @@ function LoginForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
-            const response = await axios.post('http://localhost:3002/login', {
-                email,
-                password
+            const response = await fetch('http://localhost:3002/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
             });
 
-            if (response.status === 200) {
+            const data = await response.json();
+
+            if (response.ok) {
                 setMessage('Connexion réussie!');
-                console.log('Utilisateur:', response.data.user);
+                console.log('Utilisateur:', data.user);
 
                 login();
                 navigate('/home');
+            } else {
+                if (response.status === 401) {
+                    setMessage('Identifiants invalides');
+                } else {
+                    setMessage('Une erreur est survenue.');
+                    console.error('Erreur:', data);
+                }
             }
         } catch (error) {
-            if (error.response && error.response.status === 401) {
-                setMessage('Identifiants invalides');
-            } else {
-                setMessage('Une erreur est survenue.');
-                console.error('Erreur:', error);
-            }
+            setMessage('Une erreur est survenue.');
+            console.error('Erreur:', error);
         }
     };
 
